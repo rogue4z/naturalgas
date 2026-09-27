@@ -62,6 +62,11 @@ function updateStorage(storage) {
         document.getElementById("storageAverage").textContent =
             `${storage.fiveYearAverage} Bcf`;
 
+        // Year ago
+
+       document.getElementById("storageYearAgo").textContent =
+    `  ${storage.yearAgo.toLocaleString()} Bcf`; 
+
         document.getElementById("storageVsAverage").textContent =
             `${percentage >= 0 ? "+" : ""}${percentage.toFixed(1)}%`;
 
