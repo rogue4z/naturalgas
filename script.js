@@ -33,6 +33,9 @@ function updateStorage(storage) {
     const weeklyChange =
         storage.current - storage.previous;
 
+    document.getElementById("storageYearAgo").textContent =
+    `${storage.yearAgo.toLocaleString()} Bcf`;
+
 
     // Current
 
