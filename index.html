@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Gas Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Natural Gas Dashboard</h1>
+        <p>Physical market → Henry Hub → MCX Natural Gas</p>
+    </header>
+
+    <main>
+
+        <!-- PRICES -->
+        <section class="grid">
+
+            <div class="card">
+                <h2>Henry Hub</h2>
+                <div class="value" id="henryHub">$--</div>
+                <div class="change neutral" id="henryChange">--</div>
+            </div>
+
+            <div class="card">
+                <h2>MCX Natural Gas</h2>
+                <div class="value" id="mcxGas">₹--</div>
+                <div class="change neutral" id="mcxChange">--</div>
+            </div>
+
+            <div class="card">
+                <h2>USD / INR</h2>
+                <div class="value" id="usdInr">₹--</div>
+                <div class="change neutral" id="usdChange">--</div>
+            </div>
+
+        </section>
+
+
+        <!-- STORAGE -->
+        <section class="card wide">
+
+            <h2>US Storage</h2>
+
+            <div class="stats">
+
+                <div>
+                    <span>Current</span>
+                    <strong id="storageCurrent">-- Bcf</strong>
+                </div>
+
+                <div>
+                    <span>Weekly Change</span>
+                    <strong id="storageChange">-- Bcf</strong>
+                </div>
+
+                <div>
+                    <span>5Y Average</span>
+                    <strong id="storageAverage">-- Bcf</strong>
+                </div>
+
+                <div>
+                    <span>vs 5Y Average</span>
+                    <strong id="storageVsAverage">--%</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEATHER -->
+        <section class="grid">
+
+            <div class="card">
+                <h2>Heating Demand</h2>
+                <div class="big-indicator neutral" id="heatingDemand">
+                    →
+                </div>
+                <p id="heatingText">Waiting for data</p>
+            </div>
+
+            <div class="card">
+                <h2>Cooling Demand</h2>
+                <div class="big-indicator neutral" id="coolingDemand">
+                    →
+                </div>
+                <p id="coolingText">Waiting for data</p>
+            </div>
+
+        </section>
+
+
+        <!-- SUPPLY -->
+        <section class="card wide">
+
+            <h2>Supply</h2>
+
+            <div class="stats">
+
+                <div>
+                    <span>US Production</span>
+                    <strong id="production">-- Bcf/d</strong>
+                </div>
+
+                <div>
+                    <span>LNG Exports</span>
+                    <strong id="lngExports">--</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEMAND -->
+        <section class="card wide">
+
+            <h2>Demand</h2>
+
+            <div class="stats">
+
+                <div>
+                    <span>Power Burn</span>
+                    <strong id="powerBurn">--</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MARKET STORY -->
+        <section class="card wide story">
+
+            <h2>Today's Market Story</h2>
+
+            <div id="marketStory">
+
+                <p>Waiting for market data...</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRESSURE -->
+        <section class="card wide">
+
+            <h2>Market Pressure</h2>
+
+            <div class="pressure">
+
+                <div>
+                    <span>Supply</span>
+                    <strong id="supplyPressure">→</strong>
+                </div>
+
+                <div>
+                    <span>Demand</span>
+                    <strong id="demandPressure">→</strong>
+                </div>
+
+                <div>
+                    <span>Storage</span>
+                    <strong id="storagePressure">→</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Natural Gas Learning Dashboard</p>
+        <p>Data will be connected in later versions.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

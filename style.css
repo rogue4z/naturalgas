@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    color: #999;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.wide {
+    width: 100%;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #bbb;
+}
+
+.value {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.change {
+    font-size: 16px;
+}
+
+.neutral {
+    color: #aaa;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stats div,
+.pressure div {
+    background: #151515;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.stats span,
+.pressure span {
+    display: block;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.stats strong {
+    font-size: 22px;
+}
+
+.big-indicator {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #999;
+}
+
+.story p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.pressure {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pressure strong {
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+@media (max-width: 800px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pressure {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
